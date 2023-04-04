@@ -1499,6 +1499,20 @@ a:hover {
   opacity: 0;
 }
 
+
+/* Aditya changes */
+/* footer changes */
+.mxh-8{
+  max-height: 8em;
+}
+
+.footer-content{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
 /* slider styling */
 
 .slide-container{
