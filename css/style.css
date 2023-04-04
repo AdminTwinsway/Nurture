@@ -101,11 +101,11 @@ a:hover {
 }
 
 .site-section {
-  padding: 1em 0;
+  padding: 2.5em 0;
 }
 @media (min-width: 768px) {
   .site-section {
-    padding: 1em 0;
+    padding: 5em 0;
   }
 }
 .site-section.site-section-sm {
@@ -1502,6 +1502,10 @@ a:hover {
 
 /* Aditya changes */
 /* footer changes */
+.home-slider{
+  margin-bottom: 10em;
+}
+
 .mxh-8{
   max-height: 8em;
 }
@@ -1510,6 +1514,11 @@ a:hover {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+}
+
+.read-more-btn{
+  cursor: pointer;
+  color: rgb(77, 159, 226) !important;
 }
 
 
