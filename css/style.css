@@ -101,11 +101,11 @@ a:hover {
 }
 
 .site-section {
-  padding: 1em 0;
+  padding: 2.5em 0;
 }
 @media (min-width: 768px) {
   .site-section {
-    padding: 1em 0;
+    padding: 5em 0;
   }
 }
 .site-section.site-section-sm {
@@ -643,6 +643,7 @@ a:hover {
   background-position: center center;
   position: relative;
   padding: 0 2em;
+  margin-bottom: 10em
 }
 .site-blocks-cover,
 .site-blocks-cover > .container > .row {
