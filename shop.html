@@ -239,12 +239,38 @@
         <div class="row">
           <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
 
-            <div class="block-7">
-              <h3 class="footer-heading mb-4">About Us</h3>
+            <div class="block-7 mb-4">
+              <!-- <h3 class="footer-heading mb-4">About Us</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quae reiciendis distinctio voluptates
-                sed dolorum excepturi iure eaque, aut unde.</p>
+                sed dolorum excepturi iure eaque, aut unde.</p> -->
+                <h3 class="footer-heading mb-4">About Us</h3>
+                <div class="footer-content mxh-8">
+                  <p>
+                    Happiness is ‘seeing smile of gratitude from a patient’, and
+                    for a patient happiness is getting a quality care. This is
+                    achieved by the collective effort of all health care
+                    professionals in the system. And in this system role of a
+                    pharmaceutical company is inevitable. Being a responsible
+                    pharma company, we are committed to provide the best quality
+                    medicines, devices and services for a better health care
+                    ecosystem.
+                  </p>
+                  <p>
+                    We believe “Spreading Happiness” is an endless effort to
+                    provide quality and affordability.
+                  </p>
+                  <p>
+                    Nurture Health Care is an emerging pharmaceutical company
+                    specializing in drugs and devices. Our team is expertise
+                    more than fifteen years in pharmaceutical industry, the
+                    commitment and dedication of this team encourage us to do
+                    the best and more for our valuable consumers across India.
+                  </p>
+                </div>
             </div>
-
+            <a class="read-more-btn">
+              Read more
+            </a>
           </div>
           <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
             <h3 class="footer-heading mb-4">Quick Links</h3>
@@ -295,6 +321,17 @@
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
+
+  <script>
+    $(".read-more-btn").click(function () {
+      $(".footer-content").toggleClass("mxh-8");
+      if ($(".footer-content").hasClass("mxh-8")) {
+        $(this).text("Read more")
+      } else {
+        $(this).hide()
+      }
+    });
+  </script>
 
 </body>
 

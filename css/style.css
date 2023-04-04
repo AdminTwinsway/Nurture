@@ -643,7 +643,6 @@ a:hover {
   background-position: center center;
   position: relative;
   padding: 0 2em;
-  margin-bottom: 10em
 }
 .site-blocks-cover,
 .site-blocks-cover > .container > .row {
@@ -1503,6 +1502,10 @@ a:hover {
 
 /* Aditya changes */
 /* footer changes */
+.home-slider{
+  margin-bottom: 10em;
+}
+
 .mxh-8{
   max-height: 8em;
 }
@@ -1511,6 +1514,11 @@ a:hover {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+}
+
+.read-more-btn{
+  cursor: pointer;
+  color: rgb(77, 159, 226) !important;
 }
 
 
