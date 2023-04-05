@@ -1546,9 +1546,8 @@ a:hover {
 }
 
 .prev-slide {
-  background-image: url("../images/chevron-right.svg");
+  background-image: url("../images/left-arrow.svg");
   background-size: contain;
-  transform: rotate(180deg);
 }
 .owl-next {
   right: 6.5%;
@@ -1556,7 +1555,7 @@ a:hover {
 
 .next-slide {
   right: 0;
-  background-image: url("../images/chevron-right.svg");
+  background-image: url("../images/next.svg");
   background-size: contain;
 }
 
