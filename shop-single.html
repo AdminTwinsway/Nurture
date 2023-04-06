@@ -3,41 +3,357 @@
 
 <head>
   <title>Nurture Health Care</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet">
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet" />
+  <link rel="stylesheet" href="fonts/icomoon/style.css" />
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
-  <link rel="stylesheet" href="css/jquery-ui.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
+  <link rel="stylesheet" href="css/jquery-ui.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+  <link rel="stylesheet" href="css/aos.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+
+    const queryString = window.location.search;
+
+    var urlParams = new URLSearchParams(queryString);
+
+    var id = urlParams.get('id');
+    var arrayData = [
+    {
+      id: 1,
+      title: "Vildagliptin 50mg Tablets",
+      description: `In patients with diabetes inadequately controlled with metformin. Vildagliptin provide better control over HbA1c. Rapidly absorded & high bioavailablity(85%) offer oral administration. Efficacious, weight neutral with low risk of hyperglycemia as monotherapy.`,
+      imagename: "images/prod_001.jpg",
+      info1: {}
+    },
+    {
+      id: 2,
+      title: "Vildagliptin 50mg+ Metformin 500mg Tablets",
+      description: `METFORMIN first line agent for the treatment of T2DM. Inhibits glucogensis through four different mechanisms. Decreases cardiovascular events. VILDAGLIPTIN Dipeptidly peptidase-4 (DPP4) inhibitor. Vildagliptin results in reduction in HbA1c levels of 6-12mmmol/mol`,
+      imagename: "images/prod_002.jpg",
+      info1: {}
+    },
+    {
+      id: 3,
+      title: "Azithromycin Syrup 30ml Pack",
+      description: `Possess coverage against Gram positive, Gram negative along with intracellular and atypical pathogens`,
+      imagename: "images/prod_003.jpg",
+      info1: {}
+    },
+    {
+      id: 4,
+      title: "Montelukast 4mg + Levocetirizine 2.5mg",
+      description: `Good for the symptoms of allergic rhinitis. Reduce inflamation in the airways and make breathing easier.`,
+      imagename: "images/prod_004.jpg",
+      info1: {}
+
+    },
+    {
+      id: 5,
+      title: "Budesonide Respules 0.5mg/1mg",
+      description: `Easily intervention with corticosteroid alters the chronic progressive nature of the disese. Corticosteroid works synergistically with bronchodilators for the effective control of Asthma. Only ICS, approved by USFDA <4yrs. No significant HPA axis suppression`,
+      imagename: "images/IMG_0100.JPG",
+      info1: {}
+    },
+    {
+      id: 6,
+      title: "levosalbutamol 1.25 mg + ipratopium bromide 500 mcg Respules",
+      description: `Total Lung coverage due to different site of action. Greater and  prolonged improvements in lung function. Fast, effective relief in COPD`,
+      imagename : "images/IMG_0102.JPG",
+      info1: {}
+    },
+
+    {
+
+      id: 7,
+      title: "Levocetirizine & Montelukast Tablets IP (Montelukast 10mg + Levoceltirizine 5 mg)",
+      description: `Relives symptoms of Allergic Rhinitis. Safe and well tolerated. Once daily dosing improves compliance. Manufactured at WHO-GMP certified facility.`,
+      imagename: "images/IMG_0104.JPG",
+      info1: {}
+    },
+
+    {
+
+      id: 8,
+
+      title: "Amoxycillin & potassium clavulanate Tablets IP",
+
+      description: `Manufactured at WHO GMP approved facility. Manufactured and blistered under sodium vapour lamp which prevents degradation of light sensitive potassium Clavulanate. Blister packing ensures better stability of formulation`,
+
+      imagename: "images/IMG_0105.JPG",
+
+      info1: {}
+
+    },
+    {
+
+      id: 9,
+
+      title: "Azithromycin Tablets IP 500 mg",
+
+      description: `Azinur-500 a preferred choice in RTI Management. Maximum coverage against typical and atypical pathogens. Azithromycin in AZINUR-500 result in 98.92% clinical success rate.`,
+
+      imagename: "images/IMG_0106.jpg",
+
+      info1: {}
+
+    },
+
+    {
+
+      id: 10,
+
+      title: "Pantaprazole Sodium Tablets",
+
+      description: `Most Rapid onset of action. Most potent reversible acid inhibitor than all other PPIs. Quick action to control Acidity`,
+
+      imagename: "images/IMG_0107.jpg",
+
+      info1: {}
+
+    },
+    {
+
+      id: 11,
+
+      title: "Aceclofenac 100mg + Paracetamol 325mg Tablets",
+
+      description: `DELIVERS PROMISING RELIEF IN...LOW BACK PAIN. ACUTE PAIN. INFLAMATION & SPASM`,
+
+      imagename: "images/IMG_0108.jpg",
+
+      info1: {}
+
+    },
+    {
+
+      id: 12,
+
+      title: "Vitamin C,Zinc and Vitamin D3 Tablets",
+
+      description: `Biggest immune system booster of all.A strong antioxidant,reduce oxidative stress. Supports Enzyme function. Improve mucociliary clearance and removal of
+      bacteria and virus containing particles.First line defence against infections and diseases.Enhances pathogen fighting effects of monocytes and macrophages.`,
+
+      imagename : "images/IMG_0109.jpg",
+
+      info1: {}
+
+    },
+    {
+
+      id: 13,
+
+      title: "Vitamin C 500mg Chewable Tablets",
+
+      description: `Biggest immune system booster of all. A strong antioxidant,reduce oxidative stress. Helps in preventing common cold and fever.`,
+
+      imagename: "images/IMG_0110.jpg",
+
+      info1: {}
+
+    },
+    {
+
+      id: 14,
+
+      title: "Rantidine 75mg/5ml Syrup - 100ml Pack",
+
+      description: `DOSAGE Treatment of Duodenal and Gastric Ulcer:2 to 4mg/kg twice daily to a maximum of 300mg/day. Maintenance and healing of Duodenal and Gastric Ulcers:2 to 4mg/kg twice daily to a maximum of 150mg/day. Treatment of GERD and Erosive Esophagitis: 5 to 10mg/kg/Day usually given as 2 divided doses.`,
+
+      imagename: "images/IMG_0111.jpg",
+
+      info1: {}
+
+    },
+    {
+      id: 15,
+
+      title: "Cholecalciferol 400 I.U Drops",
+
+      description: `Ensure right dose of Vitamin D for 0-12 months.`,
+
+      imagename: "images/IMG_0112.jpg",
+
+      info1: {}
+
+    },
+    {
+      id: 16,
+
+      title: "Fluticasone Furoate 27.5 mcg",
+
+      description: `For the treatment of sneezing and runny nose due to allergies. Steroid nasal spray for cold-like symptoms caused by Allergic Rhinitis. Corticosteroid reduces swelling (inflammation) in nasal passages. It works by blocking the production
+      of certain chemical messengers in the body that causes inflammation and allergies.`,
+
+      imagename : "images/IMG_0366.jpg",
+
+      info1: {}
+
+    },
+    {
+      id: 17,
+
+      title: "Mometasone Furoate 50 mcg",
+
+      description: `Anti inflamatory and antipruritic properties reduces allergic reaction in various types of cells. Only nasal steroid indicated for the treatment of acute sinusitis. Treat and prevent the symptoms of Allergic Rhinitis and Nasal polyps. Safe and well tolerated in patients with all types of allergic rhinitis.`,
+
+      imagename: "images/IMG_0367.jpg",
+
+      info1: {}
+
+    },
+    {
+
+      id: 18,
+
+      title: "Amoxicillin, 400mg and Pottasium Clavulate 57 mg Oral Suspension",
+
+      description: `Amoxicillin/ Clavulanate combination is superior agent against
+      all the key respiratory pathogens, including resistant strains involved in paediatric respiratory infections.
+      Broad spectrum of coverage against gram negative, anaerobes including resistant strains.
+      Clavulanate potassium is a beta- lactamase inhibitor that helps prevent certain bacteria from becoming resistant to amoxicillin.`,
+
+      imagename : "images/IMG_0370.JPG",
+
+      info1 : {}
+
+    },
+
+  {
+      id: 19,
+
+      title : "Dapagliflozin Tablets",
+
+      description: `Improve glycemic control.
+      Reduce risk of hospitalisation for heart failure.
+      Reduce risk of chronic kidney disease.
+      Lowers blood pressure due to its natriuresis effect, it reduces oxidative stress and may delay atherosclerosis.`,
+
+      imagename: "images/IMG_0380.jpg",
+
+      info1 : {}
+
+  },
+  {
+
+      id: 20,
+
+      title : "Dapagliflozin 5mg + Metformin(ER) 500 mg Tablets",
+
+      description: `Initial combination therapy results in 2% HbA1C reduction.
+      Reduce cardiovascular events.
+      Improves glycemic control in adult with Type 2 diabetic Mellitus.
+      Inhibits glycogenesis through four different mechanism.`,
+
+      imagename: "images/IMG_0381.JPG",
+
+      info1 : { }
+
+  },
+
+  {
+
+    id: 21,
+
+      title : "Terbutaline Sulphate 1.25 mg, Ambroxol hydrochloride 15 mg, Guaiphenesin 50 mg, in Mentholated flavoured syrup",
+
+      description: `Terbutaline is a bronchodilator, relax the muscles and widens the airway. Ambroxol hydrochloride is a mucolytic, thins and loosens mucus to cough out.
+      Guaiphenesin is an expectorant, decreasing the stickiness of airway secretions.
+      Menthol is an organic compound, produces sensation of coolness and relieves minor throat irritation.`,
+
+      imagename: "images/IMG_0383.jpg",
+
+      info1 : {}
+
+  },
+  {
+
+      id: 22,
+
+      title : "Acebrophylline 100 mg + Acetylcysteine 600 mg",
+
+      description: `Acebrophylline belongs to the class of bronchodilators with additional mucolytic properties and work by relaxing muscles and widening the airways of the lungs.
+      Acetylcysteine belongs to the class of mucolytic agents that works by thinning and loosening phlegm(mucus) in the lungs, windpipe and nose.
+      Both combinations break down the acid mucopolysaccharide fibers that make the mucus thinner and remove sputum efficiently by coughing.
+      However the viscosity of sputum remains low for as long as treatment is maintained.Together they help to cough out easily and make breathing easier by opening the airways.
+      Acebrophylline + Acetylcysteine is not recommended for children below 14 years of age.`,
+
+      imagename: "images/IMG_0382.JPG",
+
+      info1 : { }
+
+  },
+  {
+
+    id: 23,
+
+      title : "Formoterol Fumarate 6 mcg + Budesonide 200/400 mcg",
+
+      description: `ICS+ LABA combination to control and prevent symptoms caused by Asthma and COPD.
+      World trusted inhaled corticosteroids alters the chronic progressive nature of the disease.
+      Formoterol Fumarate is a long acting bronchodilator(LABA) provide prolonged improvement in lung function.
+      Only ICS + LABA combination recommended as SMART Therapy for the treatment of Asthma.`,
+
+      imagename: "images/IMG_0384.JPG",
+
+      info1 : { }
+
+  },
+  {
+
+    id: 24,
+
+      title : "Levosalbutamol Respules .31/.63/1.25mg",
+
+      description: `A single dose of levosalbutamol produces a similar bronchodilator response as salbutamol at half the dose.
+      Better safety profile compared to racemic salbutamol. 100 fold greater affinity for ẞ2 adrenergic receptors than dextroisomer.`,
+
+      imagename: "images/IMG_0392.JPG",
+
+      info1 : { }
+
+  },
+  {
+
+    id: 25,
+
+      title : "NUTRINUR Syrup & Drops Multivitamins, Minerals & Lysine",
+
+      description: `Nutrinur syrup is used to treat and prevent vitamin and mineral deficiency. It has antioxidant properties that protect the body from damage.
+      It boosts the immunity of the body and improves overall well - being.
+      It improves the overall metabolism and physiological function of the body.`,
+
+      imagename: "images/IMG_0394.JPG",
+
+      info1 : { }
+
+  },
 
 
-  <link rel="stylesheet" href="css/aos.css">
 
-  <link rel="stylesheet" href="css/style.css">
-
+      ]
+  </script>
 </head>
 
 <body>
-
   <div class="site-wrap">
-
-
     <div class="site-navbar py-2">
-    
       <div class="search-wrap">
         <div class="container">
           <a href="#" class="search-close js-search-close"><span class="icon-close2"></span></a>
           <form action="#" method="post">
-            <input type="text" class="form-control" placeholder="Search keyword and hit enter...">
+            <input type="text" class="form-control" placeholder="Search keyword and hit enter..." />
           </form>
         </div>
       </div>
-    
+
       <div class="container">
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
@@ -48,7 +364,7 @@
           <div class="main-nav d-none d-lg-block">
             <nav class="site-navigation text-right text-md-center" role="navigation">
               <ul class="site-menu js-clone-nav d-none d-lg-block">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Store</a></li>
                 <!-- <li class="has-children">
                   <a href="#">Dropdown</a>
@@ -76,7 +392,6 @@
                   <ul class="dropdown">
                     <li><a href="chemist.html">Chemist</a></li>
                     <li><a href="patientservice.html">Patient</a></li>
-
                   </ul>
                 </li>
                 <li><a href="contact.html">Contact</a></li>
@@ -99,8 +414,11 @@
     <div class="bg-light py-3">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 mb-0"><a href="index.html">Home</a> <span class="mx-2 mb-0">/</span> <a
-              href="shop.html">Store</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">Vildanur-50</strong></div>
+          <div class="col-md-12 mb-0">
+            <a href="index.html">Home</a> <span class="mx-2 mb-0">/</span>
+            <a href="shop.html">Store</a> <span class="mx-2 mb-0">/</span>
+            <strong class="text-black">Vildanur-50</strong>
+          </div>
         </div>
       </div>
     </div>
@@ -110,41 +428,49 @@
         <div class="row">
           <div class="col-md-5 mr-auto">
             <div class="border text-center">
-              <img src="images/prod_001.jpg" alt="Image" class="img-fluid p-5">
+              <img id="product" src="#" alt="Image" class="img-fluid p-5" />
+              <script>
+                document.getElementById("product").src =
+                  arrayData[id-1].imagename;
+              </script>
             </div>
           </div>
           <div class="col-md-6">
-            <h2 class="text-black">Vildagliptin Tablets,50mg</h2>
+            <h2 class="text-black">
+              <script>
+                document.writeln(arrayData[id-1].title);
+              </script>
+            </h2>
 
             <p>
-              In patients with diabetics inadequently controlled with metformin.
-              Vildagliptin provide better control over HbA1C.
-              Rapidly absorbed & high bioavailability(85%) offer oral administration.
-              Efficacious, weight neutral with low risk of hyperglycemia as monotherapy.
-              Limit the blood glucose level to normal.
+              <script>
+                document.writeln(arrayData[id-1].description);
+              </script>
             </p>
-            
 
-            <p><del>$95.00</del>  <strong class="text-primary h4">$55.00</strong></p>
+            <!-- <p><del>$95.00</del>  <strong class="text-primary h4">$55.00</strong></p> -->
 
-            
-            
-            <div class="mb-5">
-              <div class="input-group mb-3" style="max-width: 220px;">
+            <!-- <div class="mb-5">
+              <div class="input-group mb-3" style="max-width: 220px">
                 <div class="input-group-prepend">
-                  <button class="btn btn-outline-primary js-btn-minus" type="button">&minus;</button>
+                  <button class="btn btn-outline-primary js-btn-minus" type="button">
+                    &minus;
+                  </button>
                 </div>
                 <input type="text" class="form-control text-center" value="1" placeholder=""
-                  aria-label="Example text with button addon" aria-describedby="button-addon1">
+                  aria-label="Example text with button addon" aria-describedby="button-addon1" />
                 <div class="input-group-append">
-                  <button class="btn btn-outline-primary js-btn-plus" type="button">&plus;</button>
+                  <button class="btn btn-outline-primary js-btn-plus" type="button">
+                    &plus;
+                  </button>
                 </div>
               </div>
-    
             </div>
-            <p><a href="cart.html" class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">Add To Cart</a></p>
+            <p>
+              <a href="cart.html" class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">Add To Cart</a>
+            </p> -->
 
-            <div class="mt-5">
+            <!-- <div class="mt-5">
               <ul class="nav nav-pills mb-3 custom-pill" id="pills-tab" role="tablist">
                 <li class="nav-item">
                   <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
@@ -211,15 +537,13 @@
                 </div>
             
               </div>
-            </div>
-
-    
+            </div> -->
           </div>
         </div>
       </div>
     </div>
 
-    <div class="site-section bg-secondary bg-image" style="background-image: url('images/bg_2.jpg');">
+    <!-- <div class="site-section bg-secondary bg-image" style="background-image: url('images/bg_2.jpg');">
       <div class="container">
         <div class="row align-items-stretch">
           <div class="col-lg-6 mb-5 mb-lg-0">
@@ -242,31 +566,27 @@
           </div>
         </div>
       </div>
-    </div>
-
+    </div> -->
 
     <footer class="site-footer">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-6 mb-4 mb-lg-0">
-
             <div class="block-7 mb-4">
               <!-- <h3 class="footer-heading mb-4">About Us</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quae reiciendis distinctio voluptates
                 sed dolorum excepturi iure eaque, aut unde.</p> -->
-                <h3 class="footer-heading mb-4">About Us</h3>
-                <div class="footer-content mxh-8">
-                  <p>
-                    Happiness is ‘seeing smile of gratitude from a patient’, and
-                    for a patient happiness is getting a quality care. This is
-                    achieved by the collective effort of all health care
-                    professionals in the system.
-                  </p>
-                </div>
+              <h3 class="footer-heading mb-4">About Us</h3>
+              <div class="footer-content mxh-8">
+                <p>
+                  Happiness is ‘seeing smile of gratitude from a patient’, and
+                  for a patient happiness is getting a quality care. This is
+                  achieved by the collective effort of all health care
+                  professionals in the system.
+                </p>
+              </div>
             </div>
-            <a class="read-more-btn" href="about.html">
-              Read more
-            </a>
+            <a class="read-more-btn" href="about.html"> Read more </a>
           </div>
           <div class="col-md-6 col-lg-6 mx-auto mb-5 mb-lg-0">
             <h3 class="footer-heading mb-4">Quick Links</h3>
@@ -278,7 +598,7 @@
             </ul>
           </div>
 
-          <div class="col-md-6 col-lg-3">
+          <!-- <div class="col-md-6 col-lg-3">
             <div class="block-5 mb-5">
               <h3 class="footer-heading mb-4">Contact Info</h3>
               <ul class="list-unstyled">
@@ -289,20 +609,23 @@
             </div>
 
 
-          </div>
+          </div> -->
         </div>
         <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <p>
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
               Copyright &copy;
-              <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made
-              with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank"
-                class="text-primary">Colorlib</a>
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              All rights reserved.
+               <!-- | This template is made with
+              <i class="icon-heart" aria-hidden="true"></i> by
+              <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a> -->
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>
-
         </div>
       </div>
     </footer>
@@ -322,13 +645,12 @@
     $(".read-more-btn").click(function () {
       $(".footer-content").toggleClass("mxh-8");
       if ($(".footer-content").hasClass("mxh-8")) {
-        $(this).text("Read more")
+        $(this).text("Read more");
       } else {
-        $(this).hide()
+        $(this).hide();
       }
     });
   </script>
-
 </body>
 
 </html>
